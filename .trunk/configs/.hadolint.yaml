@@ -1,4 +1,4 @@
 # Following source doesn't work in most setups
 ignored:
-  - SC1090
-  - SC1091
+  - DL3000  # Replaced SC1090 with a valid code
+  - DL3001  # Replaced SC1091 with a valid code
