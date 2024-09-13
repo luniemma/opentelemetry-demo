@@ -579,6 +579,7 @@ data:
     }
 ---
 # Source: opentelemetry-demo/templates/grafana-dashboards.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -10398,7 +10399,7 @@ spec:
             limits:
               memory: 1Gi
           volumeMounts:
-      volumes:
+      volumes: 
 ---
 # Source: opentelemetry-demo/templates/component.yaml
 apiVersion: apps/v1
@@ -10411,7 +10412,8 @@ metadata:
     app.kubernetes.io/instance: opentelemetry-demo
     app.kubernetes.io/component: paymentservice
     app.kubernetes.io/name: opentelemetry-demo-paymentservice
-    app.kubernetes.io/version: "1.11.1"
+    app.kubernetes.iols
+    /version: "1.11.1"
     app.kubernetes.io/part-of: opentelemetry-demo
 spec:
   replicas: 1

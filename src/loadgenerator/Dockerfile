@@ -9,6 +9,8 @@ RUN apt-get -qq update \
     && apt-get install -y --no-install-recommends g++ \
     && rm -rf /var/lib/apt/lists/*
 
+# Set the working directory before copying
+WORKDIR /usr/src/app/
 COPY ./src/loadgenerator/requirements.txt .
 RUN pip install --prefix="/reqs" -r requirements.txt
 
